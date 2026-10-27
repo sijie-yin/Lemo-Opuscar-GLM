@@ -1,6 +1,36 @@
+# Lemo-Opuscar-GLM
+
+> Forked from [lemomo-ai/lemo-opuscar](https://github.com/lemomo-ai/lemo-opuscar) — adapted for OpenClaw + GLM + Microsoft Edge.
+
+## GLM / OpenClaw / Edge Adaptation
+
+This fork adapts Lemo-Opuscar to run on:
+- **OpenClaw** — agent instructions (AGENTS.md) are natively compatible; no Claude Code required
+- **GLM** (zai/glm-5.3) — any GLM-powered agent can direct films using the included AGENTS.md  
+- **Microsoft Edge** — set PLAYWRIGHT_CHROME env var to Edge path to bypass Chromium download
+
+### Quick Start (OpenClaw + GLM)
+
+1. Clone this repo
+2. npm install --registry=https://registry.npmmirror.com
+3. pip install numpy scipy soundfile soxr pillow
+4. Set PLAYWRIGHT_CHROME to your Edge executable path
+5. Your GLM agent reads AGENTS.md and starts directing films
+
+### What Changed
+
+- Zero code modifications (original tools are model-agnostic)
+- Environment variable PLAYWRIGHT_CHROME for Edge browser (bypasses Chromium download in CN)
+- Google Fonts TTF files added to art-deco demo (OFL 1.1 licensed)
+- Render pipeline verified on Windows 10 + Node 24 + Python 3.12 + Edge headless
+
+License: MIT (code) + CC BY 4.0 (styles) — same as upstream.
+
+---
+
 <div align="center">
 
-# Lemo-Opuscar
+# Lemo-Opuscar (original readme)
 
 **A toolbox of film styles made in code: <!--n-->59<!--/n--> ready to use, and your own.**<br>
 Pick a style or make one from scratch, bring your story, and let your coding agent direct.<br>
